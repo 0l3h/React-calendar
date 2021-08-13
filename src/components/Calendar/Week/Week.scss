@@ -1,0 +1,14 @@
+@import './../../../common/styles/vars';
+
+#weeks-name {            
+    color: rgb(255, 85, 85);
+
+    th {
+        @include month-markup-sizing;
+    }
+
+    @media screen and (min-width: 720px) {
+        font-size: 32px;
+        width: 60vw;
+    }
+}

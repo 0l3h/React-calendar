@@ -1,0 +1,34 @@
+@import './../../common/styles/vars';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 3vw;
+
+  @media  screen and (min-width: 960px) {
+    font-size: 32px;
+  }
+}
+
+body {
+  font-family: Mulish;
+  min-height: 100vh;
+  border: $body-margin solid $calendar-margin-color;
+  margin: 0;
+}
+
+#calendar {
+  @include position-center;
+  
+  @media screen and (max-width: 1140px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1140px) {
+    flex-direction: row;    
+  }
+
+  background-color: $calendar-margin-color;
+}

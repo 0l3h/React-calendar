@@ -1,0 +1,5 @@
+@import './../../../common/styles/vars';
+
+td {
+    @include month-markup-sizing;
+}

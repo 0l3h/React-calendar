@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+$days-number-color: rgb(165, 242, 235);
+$calendar-margin-color: rgb(46, 179, 170);
+$calendar-margin: 20px;
+$calendar-height: calc(100vh - $calendar-margin);
+$day-font-weight: 900;
+$body-margin: 3%;
+
+@mixin section-max-1140px-sizing {
+    width: 90%;
+    height: 50% - $body-margin;
+    margin: auto;
+}
+
+@mixin section-default-sizing {
+    width: 45%;
+    height: 90%;
+    font-size: 1.4rem;    
+}
+
+@mixin month-markup-sizing {
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: .4rem;
+    text-transform: uppercase;
+}
+
+@mixin position-center {
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}

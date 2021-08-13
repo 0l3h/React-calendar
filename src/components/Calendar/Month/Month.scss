@@ -1,0 +1,21 @@
+@import './../../../common/styles/vars';
+
+section {
+    @include position-center;
+    @include section-default-sizing;
+    background-color: white;
+    color: rgb(158, 217, 209);
+    margin-left: 0;
+    height: 90%;
+    text-transform: uppercase;
+    
+    #month-name {
+        @include month-markup-sizing;
+        color: rgb(64, 161, 146);
+    }
+
+    @media screen and (max-width: 1140px) {
+        @include section-max-1140px-sizing;
+        margin-top: 0;
+    }
+}

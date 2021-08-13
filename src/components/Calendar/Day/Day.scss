@@ -1,0 +1,21 @@
+@import './../../../common/styles/vars';
+
+#day {
+    @include position-center;
+    @include section-default-sizing;
+    background-color: rgb(27, 222, 203);
+    flex-direction: column;
+    color: white;
+    font-weight: 300;
+    margin-right: 0;
+
+    div + div {
+        font-size: 10rem;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 1140px) {
+        @include section-max-1140px-sizing;
+        margin-bottom: 0;
+    }
+}
